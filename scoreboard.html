@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <div class="card">
+        <div class="teams">
+          <div class="team">
+            <h3 class="team-title">HOME SCORE</h3>
+            <div class="display" id="home_score">12</div>
+
+            <div class="controls">
+              <button class="btn" onclick="add1_H()">+1</button>
+              <button class="btn" onclick="add2_H()">+2</button>
+              <button class="btn" onclick="add3_H()">+3</button>
+            </div>
+          </div>
+          <div class="team">
+            <h3 class="team-title">GUEST</h3>
+            <div class="display" id="GuestScore-el">5</div>
+            <div class="controls">
+              <button class="btn" onclick="add1_G()">+1</button>
+              <button class="btn" onclick="add2_G()">+2</button>
+              <button class="btn" onclick="add3_G()">+3</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn" onclick="resetScore()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
